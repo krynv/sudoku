@@ -3,6 +3,8 @@
 :root {
     --background-color: rgb(30, 30, 30);
     --color-white: hsl(0, 0%, 100%);
+    --color-blue: hsl(210, 88%, 56%);
+    --color-orange: rgb(205, 139, 52);
 }
 
 * {
@@ -43,7 +45,6 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-
 .header h2 {
     float: right;
     font-size: 18px;
@@ -66,7 +67,7 @@ body {
 
 .innercontainer {
     display: flex;
-    color: var(--color-grey);
+    color: var(--color-white);
     flex-wrap: wrap;
     padding: 0 20px;
 }
@@ -75,7 +76,7 @@ body {
     width: 70%;
 }
 
-.game-board {
+.game__board {
     font-family: 'Noto Sans', sans-serif;
     font-size: 26px;
     margin: 30px 0;
@@ -83,36 +84,17 @@ body {
     border-collapse: collapse;
 }
 
-.game-row:nth-child(3n) {
+.game__row:nth-child(3n) {
     border-bottom: 2px solid var(--color-white);
 }
 
-.game-cell {
+.game__cell {
     border: 1px solid var(--color-white);
     padding: 12px 16px;
 }
 
-.game-cell:nth-child(3n) {
+.game__cell:nth-child(3n) {
     border-right: 2px solid var(--color-white);
-}
-
-.footer {
-    color: var(--color-white);
-    font-weight: 400;
-    margin: 80px;
-    text-align: center;
-    font-size: 14px;
-}
-
-.footer a {
-    color: var(--color-white);
-    text-decoration: none;
-    padding-bottom: 0px;
-    border-bottom: 2px dotted var(--color-white);
-}
-
-.footer a:visited {
-    color: var(--color-white);
 }
 
 .status {
@@ -143,7 +125,7 @@ body {
     font-size: 14px;
     font-weight: 600;
     line-height: 2;
-    color: var(--color-grey-light);
+    color: var(--color-white);
     background-color: var(--background-color);
     background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
     background-repeat: no-repeat;
@@ -161,7 +143,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.2em;
     background-color: var(--color-orange);
-    color: var(--color-grey-light);
+    color: var(--color-white);
     padding-top: 4px;
     margin: 0 30px;
 }
@@ -270,7 +252,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--color-grey-lighter);
+    background-color: var(--color-white);
     border-radius: 26px;
     -webkit-transition: .4s;
     transition: .4s;
@@ -429,4 +411,12 @@ input:checked+.status__action-fast-mode-slider:before {
         padding-left: 0;
         margin-top: 3px;
     }
+}
+
+.footer {
+    color: var(--color-white);
+    font-weight: 400;
+    margin: 80px;
+    text-align: center;
+    font-size: 14px;
 }

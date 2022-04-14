@@ -11,108 +11,108 @@ function App() {
                     New Game
                 </h2>
             </header>
-            <div className="inner-container">
+            <div className="innercontainer">
                 <section className="game">
-                    <table className="game-board">
+                    <table className="game__board">
                         <tbody>
-                            <tr className="game-row">
-                                <td className="game-cell">8</td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell">2</td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell">9</td>
-                                <td className="game-cell">1</td>
-                                <td className="game-cell"></td>
+                            <tr className="game__row">
+                                <td className="game__cell">8</td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell">2</td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell">9</td>
+                                <td className="game__cell">1</td>
+                                <td className="game__cell"></td>
                             </tr>
-                            <tr className="game-row">
-                                <td className="game-cell">2</td>
-                                <td className="game-cell">3</td>
-                                <td className="game-cell">4</td>
-                                <td className="game-cell">5</td>
-                                <td className="game-cell">1</td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell">7</td>
+                            <tr className="game__row">
+                                <td className="game__cell">2</td>
+                                <td className="game__cell">3</td>
+                                <td className="game__cell">4</td>
+                                <td className="game__cell">5</td>
+                                <td className="game__cell">1</td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell">7</td>
                             </tr>
-                            <tr className="game-row">
-                                <td className="game-cell">7</td>
-                                <td className="game-cell">1</td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell">8</td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell">5</td>
-                                <td className="game-cell">4</td>
+                            <tr className="game__row">
+                                <td className="game__cell">7</td>
+                                <td className="game__cell">1</td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell">8</td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell">5</td>
+                                <td className="game__cell">4</td>
                             </tr>
-                            <tr className="game-row">
-                                <td className="game-cell">6</td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell">1</td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell">3</td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell">5</td>
+                            <tr className="game__row">
+                                <td className="game__cell">6</td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell">1</td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell">3</td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell">5</td>
                             </tr>
-                            <tr className="game-row">
-                                <td className="game-cell">1</td>
-                                <td className="game-cell">8</td>
-                                <td className="game-cell">5</td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell">7</td>
-                                <td className="game-cell">2</td>
-                                <td className="game-cell"></td>
+                            <tr className="game__row">
+                                <td className="game__cell">1</td>
+                                <td className="game__cell">8</td>
+                                <td className="game__cell">5</td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell">7</td>
+                                <td className="game__cell">2</td>
+                                <td className="game__cell"></td>
                             </tr>
-                            <tr className="game-row">
-                                <td className="game-cell"></td>
-                                <td className="game-cell">4</td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell">6</td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell">2</td>
-                                <td className="game-cell">8</td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
+                            <tr className="game__row">
+                                <td className="game__cell"></td>
+                                <td className="game__cell">4</td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell">6</td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell">2</td>
+                                <td className="game__cell">8</td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
                             </tr>
-                            <tr className="game-row">
-                                <td className="game-cell"></td>
-                                <td className="game-cell">6</td>
-                                <td className="game-cell">8</td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell">4</td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
+                            <tr className="game__row">
+                                <td className="game__cell"></td>
+                                <td className="game__cell">6</td>
+                                <td className="game__cell">8</td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell">4</td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
                             </tr>
-                            <tr className="game-row">
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell">1</td>
-                                <td className="game-cell">6</td>
-                                <td className="game-cell">2</td>
+                            <tr className="game__row">
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell">1</td>
+                                <td className="game__cell">6</td>
+                                <td className="game__cell">2</td>
                             </tr>
-                            <tr className="game-row">
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell">4</td>
-                                <td className="game-cell"></td>
-                                <td className="game-cell">7</td>
-                                <td className="game-cell">5</td>
-                                <td className="game-cell">3</td>
-                                <td className="game-cell"></td>
+                            <tr className="game__row">
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell">4</td>
+                                <td className="game__cell"></td>
+                                <td className="game__cell">7</td>
+                                <td className="game__cell">5</td>
+                                <td className="game__cell">3</td>
+                                <td className="game__cell"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -120,8 +120,8 @@ function App() {
                 <section className="status">
                     <div className="status__difficulty">
                         <span className="status__difficulty-text">Difficulty:&nbsp;&nbsp;</span>
-                        <select name="status__difficulty-select" className="status__difficulty-select">
-                            <option value="Easy" defaultValue>Easy</option>
+                        <select name="status__difficulty-select" className="status__difficulty-select" defaultValue={"Medium"}>
+                            <option value="Easy">Easy</option>
                             <option value="Medium">Medium</option>
                             <option value="Hard">Hard</option>
                         </select>
@@ -178,8 +178,8 @@ function App() {
                         </div>
                     </div>
                 </section>
-
             </div>
+
             <footer className="footer">
                 <p>This app is amazing, trust me.</p>
             </footer>
