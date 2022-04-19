@@ -5,6 +5,8 @@
     --color-white: hsl(0, 0%, 100%);
     --color-blue: hsl(210, 88%, 56%);
     --color-orange: rgb(205, 139, 52);
+    --color-grey: hsl(213, 30%, 29%);
+    --color-grey-light: hsl(213, 30%, 59%);
 }
 
 * {
@@ -91,6 +93,15 @@ body {
 .game__cell {
     border: 1px solid var(--color-white);
     padding: 12px 16px;
+    color: var(--background-color);
+}
+
+.game__cell.game__cell--filled {
+    color: var(--color-grey);
+}
+
+.game__cell.game__cell--userfilled {
+    color: var(--color-grey-light);
 }
 
 .game__cell:nth-child(3n) {
@@ -161,6 +172,10 @@ body {
     font-family: 'Noto Sans', sans-serif;
     font-size: 26px;
     padding: 12px 0;
+}
+
+.status__number.status__number--selected {
+    color: var(--color-white);
 }
 
 .status__actions {
