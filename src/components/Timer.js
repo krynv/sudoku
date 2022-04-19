@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import moment from 'moment';
 
 // could do with refactoring later - but this is fairly simple for now
@@ -6,7 +6,9 @@ export const Timer = (props) => {
     const [currentTime, setCurrentTime] = useState(moment());
 
     useEffect(() => {
-        setTimeout(() => tick(), 1000);
+        if (!props.won) {
+            setTimeout(() => tick(), 1000);
+        }
     });
 
     function tick() {
@@ -15,6 +17,9 @@ export const Timer = (props) => {
 
     function getTimeAsString() {
         const secondsTotal = currentTime.diff(props.timeGameStarted, 'seconds');
+        if (secondsTotal <= 0) {
+            return '00:00';
+        }
         const duration = moment.duration(secondsTotal, 'seconds');
         const hours = duration.hours();
         const minutes = duration.minutes();
