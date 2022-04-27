@@ -111,20 +111,24 @@ function App() {
             currentDifficulty = e.target.value;
         }
 
-        if (currentDifficulty === 'Easy') {
-            minimumCells = 3;
-            maximumCells = 7;
-            totalCells = 45;
-        }
-        else if (currentDifficulty === 'Medium') {
-            minimumCells = 2;
-            maximumCells = 6;
-            totalCells = 40;
-        }
-        else {
-            minimumCells = 1;
-            maximumCells = 5;
-            totalCells = 30;
+        switch (currentDifficulty) {
+            case 'Easy':
+                minimumCells = 3;
+                maximumCells = 7;
+                totalCells = 45;
+                break;
+
+            case 'Medium':
+                minimumCells = 2;
+                maximumCells = 6;
+                totalCells = 40;
+                break;
+
+            default:
+                minimumCells = 1;
+                maximumCells = 5;
+                totalCells = 30;
+                break;
         }
 
         for (let j = 0; j < 9; j++) {
